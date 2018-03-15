@@ -13,8 +13,8 @@ x-kinRank: "10"
 x-alexaRank: ""
 tags:
 - Stack Network
-created: "2018-03-13"
-modified: "2018-03-13"
+created: "2018-03-15"
+modified: "2018-03-15"
 url: https://raw.githubusercontent.com/streamdata-gallery/incidents/master/_listings/application-insights-dupe/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -27,7 +27,7 @@ apis:
   tags: Incidents
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/incidents/master/_listings/application-insights-dupe/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-insights-alertrules-rulename-incidents-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/incidents/master/_listings/application-insights-dupe/subscriptions-subscriptionid-resourcegroups-resourcegroupname-providers-microsoft-insights-alertrules-rulename-incidents-incidentname-get.md
 x-common:
 - type: x-documentation
   url: https://docs.microsoft.com/en-us/azure/application-insights/
