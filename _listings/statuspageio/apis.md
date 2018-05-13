@@ -40,6 +40,30 @@ x-common:
   url: https://twitter.com/statuspageio
 - type: x-website
   url: https://www.statuspage.io/
+- type: x-authentication
+  url: http://doers.statuspage.io/api/authentication/
+- type: x-blog
+  url: http://blog.statuspage.io
+- type: x-blog-rss
+  url: http://blog.statuspage.io/posts.rss
+- type: x-developer
+  url: http://doers.statuspage.io/
+- type: x-github
+  url: https://github.com/statuspage
+- type: x-pricing
+  url: https://www.statuspage.io/pricing
+- type: x-privacy
+  url: https://www.statuspage.io/privacy-policy
+- type: x-security
+  url: https://www.statuspage.io/security
+- type: x-status
+  url: http://metastatuspage.com/
+- type: x-terms-of-service
+  url: https://www.statuspage.io/terms-of-service
+- type: x-twitter
+  url: https://twitter.com/statuspageio
+- type: x-website
+  url: https://www.statuspage.io/
 include: []
 maintainers:
 - FN: Kin Lane
