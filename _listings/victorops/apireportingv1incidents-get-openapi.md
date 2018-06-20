@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: VictorOps
 x-complete: 0
 info:
-  title: VictorOps Get/search incident history
+  title: Victor Ops Get/search incident history
   description: |-
     __NOTE: This call is deprecated. Please use `GET /api-reporting/v2/incidents`.__
 
@@ -18,7 +18,7 @@ info:
     The default offset is 0 and the default limit is 20. The maximum value allowed for limit is 100.
 
     On return, the total number of records available for that query will be returned in the payload as 'total'.
-  version: 1.0.0
+  version: 0.0.2
 host: api.victorops.com
 basePath: /
 schemes:
@@ -43,11 +43,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
     post:
       summary: Create a new incident
@@ -70,11 +65,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
   /api-public/v1/incidents/ack:
     patch:
@@ -92,11 +82,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Ack
   /api-public/v1/incidents/byUser/ack:
@@ -115,11 +100,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - ByUser
       - Ack
@@ -139,11 +119,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - ByUser
       - Resolve
@@ -161,11 +136,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Reroute
   /api-public/v1/incidents/resolve:
@@ -184,11 +154,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Resolve
   /api-reporting/v1/incidents:
@@ -244,9 +209,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
       - Api-reporting
       - V1
       - Incidents

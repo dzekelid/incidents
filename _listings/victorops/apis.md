@@ -1,36 +1,33 @@
 ---
 name: VictorOps
 x-slug: victorops
-description: VictorOps is a hub for centralizing the flow of information throughout
-  the incident lifecycle. Driven by IT and DevOps system data, VictorOps provides
-  a unified platform for real-time alerting, collaboration, and documentation. Using
-  VictorOps, teams resolve incidents faster to help minimize the impact of downtime
-  and speed innovation.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
+description: VictorOps incident managament software gives DevOps observability, collaboration,
+  & real-time alerting, to build, deploy, & operate software. Learn more.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
 x-kinRank: "8"
-x-alexaRank: ""
+x-alexaRank: "196587"
 tags: Incidents
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apis.md
 specificationVersion: "0.14"
 apis:
-- name: VictorOps Get current incident information
-  x-api-slug: victorops
+- name: Victor Ops Get current incident information
+  x-api-slug: victor-ops
   description: |-
     Get a list of the currently open, acknowledged and recently resolved incidents.
     This API may be called a maximum of 6 times per minute.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-public/v1/incidents
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-public,V1,Incidents
+  tags: Incidents
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidents-get-openapi.md
-- name: VictorOps Create a new incident
-  x-api-slug: victorops
+- name: Victor Ops Create a new incident
+  x-api-slug: victor-ops
   description: |-
     Create a new incident.
 
@@ -41,90 +38,90 @@ apis:
     REST Endpoint.
 
     This API may be called a maximum of 6 times per minute.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-public/v1/incidents
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-public,V1,Incidents
+  tags: Incidents
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidents-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidents-post-openapi.md
-- name: VictorOps Acknowledge an incident or list of incidents
-  x-api-slug: victorops
+- name: Victor Ops Acknowledge an incident or list of incidents
+  x-api-slug: victor-ops
   description: |-
     The incident(s) must be currently open.  The user supplied must be a valid VictorOps user and a member of your organization.
 
     This API may be called a maximum of 6 times per minute.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-public/v1/incidents/ack
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-public,V1,Incidents,Ack
+  tags: Incidents,Ack
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsack-patch-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsack-patch-openapi.md
-- name: VictorOps Acknowledge all incidents for which a user was paged.
-  x-api-slug: victorops
+- name: Victor Ops Acknowledge all incidents for which a user was paged.
+  x-api-slug: victor-ops
   description: |-
     The incident(s) must be currently open.  The user supplied must be a valid VictorOps user and a member of your organization.
 
     This API may be called a maximum of 6 times per minute.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-public/v1/incidents/byUser/ack
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-public,V1,Incidents,ByUser,Ack
+  tags: Incidents,ByUser,Ack
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsbyuserack-patch-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsbyuserack-patch-openapi.md
-- name: VictorOps Resolve all incidents for which a user was paged.
-  x-api-slug: victorops
+- name: Victor Ops Resolve all incidents for which a user was paged.
+  x-api-slug: victor-ops
   description: |-
     The incident(s) must be currently open.  The user supplied must be a valid VictorOps user and a member of your organization.
 
     This API may be called a maximum of 6 times per minute.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-public/v1/incidents/byUser/resolve
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-public,V1,Incidents,ByUser,Resolve
+  tags: Incidents,ByUser,Resolve
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsbyuserresolve-patch-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsbyuserresolve-patch-openapi.md
-- name: VictorOps Reroute one or more incidents to one or more new routable destinations.
-  x-api-slug: victorops
+- name: Victor Ops Reroute one or more incidents to one or more new routable destinations.
+  x-api-slug: victor-ops
   description: Reroute one or more incidents to one or more users and/or escalation
     policies
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-public/v1/incidents/reroute
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-public,V1,Incidents,Reroute
+  tags: Incidents,Reroute
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsreroute-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsreroute-post-openapi.md
-- name: VictorOps Resolve an incident or list of incidents
-  x-api-slug: victorops
+- name: Victor Ops Resolve an incident or list of incidents
+  x-api-slug: victor-ops
   description: |-
     The incident(s) must be currently open.  The user supplied must be a valid VictorOps user and a member of your organization.
 
     This API may be called a maximum of 6 times per minute.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-public/v1/incidents/resolve
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-public,V1,Incidents,Resolve
+  tags: Incidents,Resolve
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsresolve-patch-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apipublicv1incidentsresolve-patch-openapi.md
-- name: VictorOps Get/search incident history
-  x-api-slug: victorops
+- name: Victor Ops Get/search incident history
+  x-api-slug: victor-ops
   description: |-
     __NOTE: This call is deprecated. Please use `GET /api-reporting/v2/incidents`.__
 
@@ -139,17 +136,17 @@ apis:
     The default offset is 0 and the default limit is 20. The maximum value allowed for limit is 100.
 
     On return, the total number of records available for that query will be returned in the payload as 'total'.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-reporting/v1/incidents
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-reporting,V1,Incidents
+  tags: Api-reporting,V1,Incidents
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apireportingv1incidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apireportingv1incidents-get-openapi.md
-- name: VictorOps Get/search incident history
-  x-api-slug: victorops
+- name: Victor Ops Get/search incident history
+  x-api-slug: victor-ops
   description: |-
     Retrieve incident history for your company, searching over date ranges and with filtering options.
 
@@ -163,24 +160,22 @@ apis:
     Unless specified otherwise with the parameter currentPhase, the response will only contain resolved incidents.
 
     On return, the total number of records available for that query will be returned in the payload as 'total'.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com////api-reporting/v2/incidents
-  tags: Continuous Deployment,Continuous Integration,Orchestration,Api-reporting,V2,Incidents
+  tags: Api-reporting,V2,Incidents
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apireportingv2incidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/victorops/apireportingv2incidents-get-openapi.md
-- name: VictorOps
-  x-api-slug: victorops
-  description: VictorOps is a hub for centralizing the flow of information throughout
-    the incident lifecycle. Driven by IT and DevOps system data, VictorOps provides
-    a unified platform for real-time alerting, collaboration, and documentation. Using
-    VictorOps, teams resolve incidents faster to help minimize the impact of downtime
-    and speed innovation.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/victorops.jpg
-  humanURL: https://victorops.com
+- name: Victor Ops
+  x-api-slug: victor-ops
+  description: VictorOps incident managament software gives DevOps observability,
+    collaboration, & real-time alerting, to build, deploy, & operate software. Learn
+    more.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/20023-victorops.jpg
+  humanURL: http://victorops.com
   baseURL: https://api.victorops.com//
   tags: Incidents
   properties:
@@ -191,12 +186,24 @@ x-common:
   url: https://victorops.com/blog/
 - type: x-blog-rss
   url: https://victorops.com/feed/
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/victorops
+- type: x-email
+  url: support@victorops.com
+- type: x-email
+  url: info@victorops.com
+- type: x-email
+  url: press@victorops.com
+- type: x-email
+  url: sales@victorops.com
 - type: x-github
   url: https://github.com/victorops
 - type: x-pricing
   url: https://victorops.com/pricing/
 - type: x-twitter
   url: https://twitter.com/VictorOps
+- type: x-website
+  url: http://victorops.com
 - type: x-website
   url: https://victorops.com
 include: []

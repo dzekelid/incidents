@@ -4,7 +4,7 @@ x-collection-name: Washington Metropolitan Area Transit Authority
 x-complete: 1
 info:
   title: WMATA Incidents
-  description: rail-bus-and-elevator-disruptionsoutages
+  description: rail-bus-and-elevator-disruptionsoutages-
   version: 1.0.0
 host: api.wmata.com
 basePath: /Incidents.svc

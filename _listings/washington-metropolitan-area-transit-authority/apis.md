@@ -1,19 +1,14 @@
 ---
 name: Washington Metropolitan Area Transit Authority
 x-slug: washington-metropolitan-area-transit-authority
-description: The collection of data offered here allows developers to create new and
-  innovative applications for the web or mobile devices. We encourage you to integrate
-  Metro data into your applications and mashups to help get people the information
-  they want about getting around. Use of our APIs and other data is free of charge,
-  you have two options, for new developers who want to try out the WMATA API but are
-  not ready for production, and you can use our demonstration key, without having
-  to register.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+description: Official feed of Metro/WMATA, not monitored 24/7. Report emergencies
+  to Transit Police at (202) 962-2121. Service updates @metrorailinfo & @metrobusinfo.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
 x-kinRank: "8"
-x-alexaRank: ""
+x-alexaRank: "24927"
 tags: Incidents
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/apis.md
 specificationVersion: "0.14"
 apis:
@@ -33,7 +28,7 @@ apis:
     time.\r\n\r\n\r\n\r\nRoutesAffected\r\n\r\nArray containing routes affected. Routes
     listed are usually\r\nidentical to base route names (i.e.: not 10Av1 or 10Av2,
     but 10A),\r\nbut may differ from what our bus methods return."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//json/BusIncidents
   tags: Transit,Buses,Incidents
@@ -67,7 +62,7 @@ apis:
     same UnitName, but no two elevators or two\r\nescalators will have the same UnitName).\r\n\r\n\r\n\r\nUnitStatus\r\n\r\nDeprecated.
     If listed here,\r\nthe unit is inoperational or otherwise impaired.\r\n\r\n\r\n\r\nUnitType\r\n\r\nType
     of unit. Will be ELEVATOR\r\nor ESCALATOR."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//json/ElevatorIncidents
   tags: Transit,Elevator,Incidents
@@ -93,7 +88,7 @@ apis:
     this to return something more reasonable like an\r\narray, but until then, use
     code similar to the following:\r\n\r\n\"RD; GR; BL;\".split(/;[\\s]?/).filter(function(fn)
     { return fn\r\n!== ''; })\r\n\r\n\r\n\r\nPassengerDelay\r\n\r\nDeprecated.\r\n\r\n\r\n\r\n\r\nStartLocationFullName\r\n\r\nDeprecated."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//json/Incidents
   tags: Transit,Buses,Incidents
@@ -118,7 +113,7 @@ apis:
     time.\r\n\r\n\r\n\r\nRoutesAffected\r\n\r\nArray containing routes affected. Routes
     listed are usually\r\nidentical to base route names (i.e.: not 10Av1 or 10Av2,
     but 10A),\r\nbut may differ from what our bus methods return."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//BusIncidents
   tags: Transit,Buses,Incidents
@@ -152,7 +147,7 @@ apis:
     same UnitName, but no two elevators or two\r\nescalators will have the same UnitName).\r\n\r\n\r\n\r\nUnitStatus\r\n\r\nDeprecated.
     If listed here,\r\nthe unit is inoperational or otherwise impaired.\r\n\r\n\r\n\r\nUnitType\r\n\r\nType
     of unit. Will be ELEVATOR\r\nor ESCALATOR."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//ElevatorIncidents
   tags: Transit,Elevator,Incidents
@@ -178,7 +173,7 @@ apis:
     this to return something more reasonable like an\r\narray, but until then, use
     code similar to the following:\r\n\r\n\"RD; GR; BL;\".split(/;[\\s]?/).filter(function(fn)
     { return fn\r\n!== ''; })\r\n\r\n\r\n\r\nPassengerDelay\r\n\r\nDeprecated.\r\n\r\n\r\n\r\n\r\nStartLocationFullName\r\n\r\nDeprecated."
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc//Incidents
   tags: Transit,Incidents
@@ -189,14 +184,9 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/incidents-get-openapi.md
 - name: WMATA Incidents
   x-api-slug: wmata-incidents
-  description: The collection of data offered here allows developers to create new
-    and innovative applications for the web or mobile devices. We encourage you to
-    integrate Metro data into your applications and mashups to help get people the
-    information they want about getting around. Use of our APIs and other data is
-    free of charge, you have two options, for new developers who want to try out the
-    WMATA API but are not ready for production, and you can use our demonstration
-    key, without having to register.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/metro-developers.png
+  description: Official feed of Metro/WMATA, not monitored 24/7. Report emergencies
+    to Transit Police at (202) 962-2121. Service updates @metrorailinfo & @metrobusinfo.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
   baseURL: https://api.wmata.com//Incidents.svc
   tags: Incidents
@@ -206,12 +196,38 @@ apis:
 x-common:
 - type: x-base
   url: http://api.wmata.com/
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/wmata
 - type: x-developer
   url: http://developer.wmata.com/
+- type: x-email
+  url: boardofdirectors@wmata.com
+- type: x-email
+  url: metrotransit@wmata.com
+- type: x-email
+  url: adaassist@wmata.com
+- type: x-email
+  url: access@wmata.com
+- type: x-email
+  url: cjachles@wmata.com
+- type: x-email
+  url: writtentestimony@wmata.com
+- type: x-email
+  url: speak@wmata.com
+- type: x-email
+  url: SEBusMove@wmata.com
+- type: x-email
+  url: PARP@wmata.com
+- type: x-email
+  url: raccomments@wmata.com
 - type: x-signup
   url: https://developer.wmata.com/signup/
+- type: x-twitter
+  url: https://twitter.com/wmata
 - type: x-website
   url: http://wmata.com/
+- type: x-website
+  url: http://wmata.com
 include: []
 maintainers:
 - FN: Kin Lane

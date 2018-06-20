@@ -1,16 +1,61 @@
 {
   "info": {
-    "name": "VictorOps Resolve all incidents for which a user was paged.",
-    "_postman_id": "5f939bd2-11b9-4535-b2c7-438834bd0fca",
+    "name": "Victor Ops Resolve all incidents for which a user was paged.",
+    "_postman_id": "fc1027a4-6354-4215-8602-f5ca20d12bb2",
     "description": "The incident(s) must be currently open.  The user supplied must be a valid VictorOps user and a member of your organization.\n\nThis API may be called a maximum of 6 times per minute.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/"
   },
   "item": [
     {
-      "name": "Continuous Deployment",
+      "name": "Alerts",
       "item": [
         {
-          "id": "82d083a0-07f5-4187-9c60-dc33e969c380",
+          "id": "14093aba-0686-4b42-9f70-aa2c554b40c1",
+          "name": "api_public.v1.alerts.uuid.get",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "host": "api.victorops.com",
+              "path": [
+                "api-public/v1/alerts/:uuid"
+              ],
+              "query": [
+                {
+                  "key": "No Name",
+                  "value": "%7B%7D",
+                  "disabled": false
+                }
+              ],
+              "variable": [
+                {
+                  "id": "uuid",
+                  "value": "{}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {
+              "mode": "raw"
+            },
+            "description": "Retrieve the details of an alert that was sent VictorOps by you.\n\nThis API may be called a maximum of 6 times per minute."
+          },
+          "response": [
+            {
+              "status": "OK",
+              "code": 200,
+              "name": "Response_200",
+              "id": "4a68404c-2275-444d-b236-97cbefa26937"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Incidents",
+      "item": [
+        {
+          "id": "bf8a919a-97d9-444c-84df-eefe0d2a856a",
           "name": "api_public.v1.incidents.get",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents?No Name=%7B%7D",
@@ -25,12 +70,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "8b9d7689-759c-4491-b418-3fa1258cb487"
+              "id": "adefb7a4-9fd8-418b-a937-d9153015583f"
             }
           ]
         },
         {
-          "id": "133e6688-22a9-4d2d-b2a1-7e4c5e41bd98",
+          "id": "6fe44cbe-bfd1-4bf4-a37c-dac132b8d115",
           "name": "api_public.v1.incidents.post",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents?No Name=%7B%7D",
@@ -45,12 +90,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "37bb5749-4d47-40ec-9849-9f51884a85ed"
+              "id": "4002c2bd-fdc3-48b9-bc18-e55f4258305c"
             }
           ]
         },
         {
-          "id": "5f1ff0c2-ef69-4a50-8ca3-006c4ef9986e",
+          "id": "ca09d09d-dcb2-425d-b566-cef76dd67253",
           "name": "api_public.v1.incidents.ack.patch",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/ack?No Name=%7B%7D",
@@ -65,12 +110,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "f92ec182-27f0-4306-88f2-21e275e23aeb"
+              "id": "596e54a5-17b0-435a-a5ab-c027f8cb9e39"
             }
           ]
         },
         {
-          "id": "dee83440-7852-4e45-b09e-fee39f06ba58",
+          "id": "43189ab3-ead4-4393-ab5a-8693dd585680",
           "name": "api_public.v1.incidents.byUser.ack.patch",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/byUser/ack?No Name=%7B%7D",
@@ -85,12 +130,12 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "c36d888c-c9e9-4767-8946-33918da3cbbc"
+              "id": "326a5ee6-6871-49a4-ba7e-37168afe5cc6"
             }
           ]
         },
         {
-          "id": "74538c46-cd90-4484-b08b-4fc8aea80b67",
+          "id": "34c7f222-87af-4cd9-81dc-ca185b34c8ee",
           "name": "api_public.v1.incidents.byUser.resolve.patch",
           "request": {
             "url": "http://api.victorops.com/api-public/v1/incidents/byUser/resolve?No Name=%7B%7D",
@@ -105,7 +150,7 @@
               "status": "OK",
               "code": 200,
               "name": "Response_200",
-              "id": "c56ceae3-495f-440b-81c2-de6d4e490ca5"
+              "id": "1b397adc-6e7f-461a-a6c8-bc7f9e5caf63"
             }
           ]
         }

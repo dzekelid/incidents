@@ -3,12 +3,12 @@ swagger: "2.0"
 x-collection-name: VictorOps
 x-complete: 0
 info:
-  title: VictorOps Acknowledge an incident or list of incidents
+  title: Victor Ops Acknowledge an incident or list of incidents
   description: |-
     The incident(s) must be currently open.  The user supplied must be a valid VictorOps user and a member of your organization.
 
     This API may be called a maximum of 6 times per minute.
-  version: 1.0.0
+  version: 0.0.2
 host: api.victorops.com
 basePath: /
 schemes:
@@ -33,11 +33,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
     post:
       summary: Create a new incident
@@ -60,11 +55,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
   /api-public/v1/incidents/ack:
     patch:
@@ -82,11 +72,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Ack
 x-streamrank:

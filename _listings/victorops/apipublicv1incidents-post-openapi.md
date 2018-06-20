@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: VictorOps
 x-complete: 0
 info:
-  title: VictorOps Create a new incident
+  title: Victor Ops Create a new incident
   description: |-
     Create a new incident.
 
@@ -14,7 +14,7 @@ info:
     REST Endpoint.
 
     This API may be called a maximum of 6 times per minute.
-  version: 1.0.0
+  version: 0.0.2
 host: api.victorops.com
 basePath: /
 schemes:
@@ -39,11 +39,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
     post:
       summary: Create a new incident
@@ -66,11 +61,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
 x-streamrank:
   polling_total_time_average: 0

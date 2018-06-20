@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: VictorOps
 x-complete: 0
 info:
-  title: VictorOps Get/search incident history
+  title: Victor Ops Get/search incident history
   description: |-
     Retrieve incident history for your company, searching over date ranges and with filtering options.
 
@@ -17,7 +17,7 @@ info:
     Unless specified otherwise with the parameter currentPhase, the response will only contain resolved incidents.
 
     On return, the total number of records available for that query will be returned in the payload as 'total'.
-  version: 1.0.0
+  version: 0.0.2
 host: api.victorops.com
 basePath: /
 schemes:
@@ -42,11 +42,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
     post:
       summary: Create a new incident
@@ -69,11 +64,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
   /api-public/v1/incidents/ack:
     patch:
@@ -91,11 +81,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Ack
   /api-public/v1/incidents/byUser/ack:
@@ -114,11 +99,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - ByUser
       - Ack
@@ -138,11 +118,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - ByUser
       - Resolve
@@ -160,11 +135,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Reroute
   /api-public/v1/incidents/resolve:
@@ -183,11 +153,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Resolve
   /api-reporting/v1/incidents:
@@ -243,9 +208,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
       - Api-reporting
       - V1
       - Incidents
@@ -304,9 +266,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
       - Api-reporting
       - V2
       - Incidents

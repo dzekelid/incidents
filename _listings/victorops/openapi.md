@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: VictorOps
 x-complete: 1
 info:
-  title: VictorOps
-  description: this-api-allows-you-to-interact-with-the-victorops-platform-in-various-ways-your-account-may-be-limitedto-a-total-number-of-api-calls-per-month-also-some-of-these-api-calls-have-rate-limitsnote-in-this-documentation-when-creating-a-sample-curl-request-clicking-the-try-it-out-button-in-some-apiviewing-interfaces-the--in-an-email-address-may-be-encoded-please-note-that-the-rest-endpoints-will-notprocess-the-encoded-version-make-sure-that-the-encoded-character-40-is-changed-to-its-unencoded-form-beforesubmitting-the-curl-request
-  version: 1.0.0
+  title: Victor Ops
+  description: this-api-allows-you-to-interact-with-the-victorops-platform-in-various-ways--your-account-may-be-limitedto-a-total-number-of-api-calls-per-month--also-some-of-these-api-calls-have-rate-limits-note-in-this-documentation-when-creating-a-sample-curl-request-clicking-the-try-it-out-button-in-some-apiviewing-interfaces-the--in-an-email-address-may-be-encoded--please-note-that-the-rest-endpoints-will-notprocess-the-encoded-version--make-sure-that-the-encoded-character-40-is-changed-to-its-unencoded-form-beforesubmitting-the-curl-request-
+  version: 0.0.2
 host: api.victorops.com
 basePath: /
 schemes:
@@ -30,11 +30,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
     post:
       summary: Create a new incident
@@ -57,11 +52,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
   /api-public/v1/incidents/ack:
     patch:
@@ -79,11 +69,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Ack
   /api-public/v1/incidents/byUser/ack:
@@ -102,11 +87,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - ByUser
       - Ack
@@ -126,11 +106,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - ByUser
       - Resolve
@@ -148,11 +123,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Reroute
   /api-public/v1/incidents/resolve:
@@ -171,11 +141,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
-      - Api-public
-      - V1
       - Incidents
       - Resolve
   /api-reporting/v1/incidents:
@@ -231,9 +196,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
       - Api-reporting
       - V1
       - Incidents
@@ -292,9 +254,6 @@ paths:
         200:
           description: OK
       tags:
-      - Continuous Deployment
-      - Continuous Integration
-      - Orchestration
       - Api-reporting
       - V2
       - Incidents
