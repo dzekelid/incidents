@@ -4,7 +4,7 @@ description: This is a repository of incidents APIs, self-contained as a Github 
   with HTML and YAML representations of the APIs and their surrounding operations.
 image: http://template.streamdata.gallery/assets/incidents.png
 created: "2018-02-24"
-modified: "2018-06-20"
+modified: "2018-06-25"
 url: http://incidents.streamdata.gallery/apis.json
 specificationVersion: "0.14"
 apis: []
@@ -12,8 +12,8 @@ tags: Incidents
 include:
 - name: PagerDuty
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/pagerduty/apis.yaml
-- name: StatusPage.io
-  url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/statuspage-io/apis.yaml
+- name: StatusPage
+  url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/statuspage/apis.yaml
 - name: Washington Metropolitan Area Transit Authority
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/apis.yaml
 - name: VictorOps
