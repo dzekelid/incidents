@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: PagerDuty
 x-complete: 1
@@ -90,18 +89,3 @@ paths:
           description: OK
       tags:
       - Incidents
-  /incidents/{id}/log_entries:
-    get:
-      summary: List log entries for the incident
-      description: List log entries for the specified incident.
-      operationId: list-log-entries-for-the-specified-incident
-      x-api-path-slug: incidentsidlog-entries-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Incidents Log Entries
----

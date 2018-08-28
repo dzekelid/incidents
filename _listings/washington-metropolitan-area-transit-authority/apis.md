@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washi
 x-kinRank: "8"
 x-alexaRank: "24927"
 tags: Incidents
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/apis.md
 specificationVersion: "0.14"
 apis:
-- name: WMATA Incidents JSON - Bus Incidents
-  x-api-slug: wmata-incidents
+- name: WMATA Incidents - JSON - Bus Incidents
+  x-api-slug: jsonbusincidents-get
   description: "Description\r\n\r\nReturns a set of reported bus incidents/delays
     for a given Route. Omit the\r\nRoute to return all reported items.\r\n\r\nNote
     that the Route parameter accepts only base route names and no\r\nvariations, i.e.:
@@ -30,15 +30,15 @@ apis:
     but 10A),\r\nbut may differ from what our bus methods return."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//Incidents.svc//json/BusIncidents
-  tags: Transit,Buses,Incidents
+  baseURL: https://api.wmata.com//Incidents.svc
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/jsonbusincidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/jsonbusincidents-get-openapi.md
-- name: WMATA Incidents JSON - Elevator/Escalator Outages
-  x-api-slug: wmata-incidents
+- name: WMATA Incidents - JSON - Elevator/Escalator Outages
+  x-api-slug: jsonelevatorincidents-get
   description: "Description\r\n\r\nReturns a list of reported elevator and escalator
     outages at a\r\ngiven station. Omit the StationCode parameter to return all reported\r\noutages.\r\n\r\nNote
     that for stations with multiple platforms and therefore StationCodes\r\n(e.g.:
@@ -64,15 +64,15 @@ apis:
     of unit. Will be ELEVATOR\r\nor ESCALATOR."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//Incidents.svc//json/ElevatorIncidents
-  tags: Transit,Elevator,Incidents
+  baseURL: https://api.wmata.com//Incidents.svc
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/jsonelevatorincidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/jsonelevatorincidents-get-openapi.md
-- name: WMATA Incidents JSON - Rail Incidents
-  x-api-slug: wmata-incidents
+- name: WMATA Incidents - JSON - Rail Incidents
+  x-api-slug: jsonincidents-get
   description: "Description\r\n\r\nReturns reported rail incidents (significant disruptions
     and delays to\r\nnormal service). The data is identical to WMATA's Metrorail Service
     Status\r\nfeed.\r\n\r\nRail incidents are refreshed once every 20 to 30 seconds
@@ -90,15 +90,15 @@ apis:
     { return fn\r\n!== ''; })\r\n\r\n\r\n\r\nPassengerDelay\r\n\r\nDeprecated.\r\n\r\n\r\n\r\n\r\nStartLocationFullName\r\n\r\nDeprecated."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//Incidents.svc//json/Incidents
-  tags: Transit,Buses,Incidents
+  baseURL: https://api.wmata.com//Incidents.svc
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/jsonincidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/jsonincidents-get-openapi.md
-- name: WMATA Incidents XML - Bus Incidents
-  x-api-slug: wmata-incidents
+- name: WMATA Incidents - XML - Bus Incidents
+  x-api-slug: busincidents-get
   description: "Description\r\n\r\nReturns a set of reported bus incidents/delays
     for a given Route. Omit the\r\nRoute to return all reported items.\r\n\r\nNote
     that the Route parameter accepts only base route names and no\r\nvariations, i.e.:
@@ -115,15 +115,15 @@ apis:
     but 10A),\r\nbut may differ from what our bus methods return."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//Incidents.svc//BusIncidents
-  tags: Transit,Buses,Incidents
+  baseURL: https://api.wmata.com//Incidents.svc
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/busincidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/busincidents-get-openapi.md
-- name: WMATA Incidents XML - Elevator/Escalator Outages
-  x-api-slug: wmata-incidents
+- name: WMATA Incidents - XML - Elevator/Escalator Outages
+  x-api-slug: elevatorincidents-get
   description: "Description\r\n\r\nReturns a list of reported elevator and escalator
     outages at a\r\ngiven station. Omit the StationCode parameter to return all reported\r\noutages.\r\n\r\nNote
     that for stations with multiple platforms and therefore StationCodes\r\n(e.g.:
@@ -149,15 +149,15 @@ apis:
     of unit. Will be ELEVATOR\r\nor ESCALATOR."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//Incidents.svc//ElevatorIncidents
-  tags: Transit,Elevator,Incidents
+  baseURL: https://api.wmata.com//Incidents.svc
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/elevatorincidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/elevatorincidents-get-openapi.md
-- name: WMATA Incidents XML - Rail Incidents
-  x-api-slug: wmata-incidents
+- name: WMATA Incidents - XML - Rail Incidents
+  x-api-slug: incidents-get
   description: "Description\r\n\r\nReturns reported rail incidents (significant disruptions
     and delays to\r\nnormal service). The data is identical to WMATA's Metrorail Service
     Status\r\nfeed.\r\n\r\nRail incidents are refreshed once every 20 to 30 seconds
@@ -175,25 +175,18 @@ apis:
     { return fn\r\n!== ''; })\r\n\r\n\r\n\r\nPassengerDelay\r\n\r\nDeprecated.\r\n\r\n\r\n\r\n\r\nStartLocationFullName\r\n\r\nDeprecated."
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
   humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//Incidents.svc//Incidents
-  tags: Transit,Incidents
+  baseURL: https://api.wmata.com//Incidents.svc
+  tags: Transit, Transit, Transportation, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/incidents-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/incidents-get-openapi.md
-- name: WMATA Incidents
-  x-api-slug: wmata-incidents
-  description: Official feed of Metro/WMATA, not monitored 24/7. Report emergencies
-    to Transit Police at (202) 962-2121. Service updates @metrorailinfo & @metrobusinfo.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1214-washington-metropolitan-area-transit-authority.jpg
-  humanURL: http://wmata.com/
-  baseURL: https://api.wmata.com//Incidents.svc
-  tags: Incidents
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/incidents/master/_listings/washington-metropolitan-area-transit-authority/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://vzaar.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://washington.metropolitan.area.transit.authority.stack.network
 - type: x-base
   url: http://api.wmata.com/
 - type: x-crunchbase
